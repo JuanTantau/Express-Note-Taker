@@ -1,0 +1,23 @@
+{
+  "name": "express-note-taker",
+  "version": "1.0.0",
+  "description": "Express Note Taker",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanTantau/Express-Note-Taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanTantau/Express-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/JuanTantau/Express-Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jest": "^28.1.3"
+  }
+}
