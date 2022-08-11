@@ -28,3 +28,35 @@ test("filters by query", () => {
     expect(updatedNotes.length).toEqual(1);
 });
 // checks
+test("finds by id", () => {
+    const startingNotes = [
+        {
+            id: "3",
+            title: "Note Next",
+            text: "Some random text"
+        },
+        {
+            id: "4",
+            title: "Note After the Next",
+            text: "Another random text",
+        }
+    ];    const result = findById("3", startingNotes);
+    expect(result.title).toBe("Note Next");
+});
+test("validations note", () => {
+    const note = {
+        id: "3"
+        title: "Note Next",
+        text: "Some random text"
+    });
+    const invalidNote = {
+        id: "4",
+        title: "Note After the Next"
+    };
+    // runs the functions
+    const result = validateNote(note);
+    const result2 = validateNote(invalidNote);
+    // results
+    expect(result).toBe(true);
+    expect(result2).toBe(false);
+});
